@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "backend-flack/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend-flack/app.py"
+    }
+  ]
+}
